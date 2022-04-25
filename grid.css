@@ -1,0 +1,122 @@
+@media only screen and (min-width: 1024px){
+    /*laptop [601px -> 1200px]*/
+    body {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .header {
+        grid-column: span 4;
+        background-color: aquamarine;
+        padding: 10px;
+    }
+    .header .title {
+        text-align: center;
+    }
+
+    .navigation {
+        grid-column: span 1;
+        background-color: aquamarine;
+
+    }
+    .content {
+        grid-column: span 2;
+        background-color: aquamarine;
+
+    }
+    .images {
+        grid-column: span 1;
+        background-color: aquamarine;
+
+
+    }
+    .images #doggo {
+        width: 300px;
+        height: auto;
+    }
+
+
+    .footer {
+        grid-column: span 4;
+        background-color: rgb(161, 176, 171);
+        padding: 10px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1023px) and (min-width: 480px){
+    body {
+        display: grid;
+        gap: 1.5rem;
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .header {
+        grid-column: span 3;
+        background-color: aquamarine;
+        padding: 10px;
+    }
+    .header .title {
+        text-align: center;
+    }
+
+    .navigation {
+        grid-column: span 3;
+    }
+    .content {
+        grid-column: span 2;
+    }
+    .images {
+        grid-column: span 1;
+
+    }
+    .images #doggo {
+        width: 300px;
+        height: auto;
+    }
+
+    .footer {
+        grid-column: span 3;
+        background-color: rgb(161, 176, 171);
+        padding: 10px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 479px) {
+	/*Small smartphones [325px -> 425px]*/
+    body {
+        display: grid;
+        gap: 1.5rem;
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header {
+        grid-column: span 1;
+        background-color: aquamarine;
+        padding: 10px;
+    }
+    .header .title {
+        text-align: center;
+    }
+
+    .navigation {
+        grid-column: span 1;
+    }
+    .content {
+        grid-column: span 1;
+    }
+    .images {
+        grid-column: span 1;
+
+    }
+    .images #doggo {
+        width: 300px;
+        height: auto;
+    }
+
+    .footer {
+        grid-column: span 1;
+        background-color: rgb(161, 176, 171);
+        padding: 10px;
+        text-align: center;
+    }
+}

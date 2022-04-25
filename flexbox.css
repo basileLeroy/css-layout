@@ -1,0 +1,55 @@
+@media only screen and (min-width: 1201px){
+    /*laptop [601px -> 1200px]*/
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .header {
+        background-color: aquamarine;
+        padding: 10px;
+    }
+    .header .title {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    .container .navigation {
+        margin-right: 25px;
+    }
+
+    .container .content {
+        width: 60%;
+    }
+
+    .container .images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .images #doggo {
+        width: 300px;
+        height: auto;
+    }
+
+    .footer {
+        background-color: rgb(161, 176, 171);
+        padding: 10px;
+        text-align: center;
+
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 601px){
+	/*Big smartphones [426px -> 600px]*/
+    body {
+        background-color: aqua;
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Small smartphones [325px -> 425px]*/
+}
